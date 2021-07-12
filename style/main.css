@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+/*Estrutura*/
+.container{
+    overflow-x: hidden;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 96vw;
+    margin: 15px;
+    border: 5px solid blue;
+    overflow-x: hidden;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 96vw;
+    margin: 15px;
+    border: 5px solid blue;
+    overflow-x: hidden;
+}
+.content{
+    margin: 15px;
+}
+/*Imagens*/
+.large-banner{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+}
+.banner{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    object-fit: contain;
+    border: 5px solid red;
+}
+.mouseDown{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    width: 15vw;
+    height: 5vh;
+}
+/* Texto */
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 1.1em;
+
+}
