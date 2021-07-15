@@ -8,9 +8,10 @@
 @media only screen and (max-width: 1023px) {
     .structure1{
         flex-direction: column-reverse;
+        width: 100%;
     }
     .text-structure{
-        width: 100%;
+        width: 80% !important;
 
     }
     .structure2{
@@ -41,6 +42,14 @@
     .center{
         width: 100px !important;
     }
+     .text-link {
+         padding: 5px;
+         font-size: 5px !important;
+         text-overflow: inherit !important;
+    }
+    .section2{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 2600px) {
@@ -52,6 +61,20 @@
     
 }
 
+@media only screen and (max-width: 900px){
+    #nav{
+        gap: 15vw !important;
+    }
+    .botaoMenuTop{
+        max-width: 10px !important;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .nav3{
+        flex-direction: column;
+    }
+
+}
 /*Estrutura*/
 .container{
     overflow-x: hidden;
@@ -64,19 +87,77 @@
 #nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 15vh;
     width: 100vw;
-    border: 5px solid blue;
     overflow-x: hidden;
+    gap: 29vw;
 }
+.nav1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 33vw;
+}
+.nav3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-right: 10px;
+    width: 34vw;
+}
+.button-nav{
+    font-size: clamp(1vw, 10px, 1vw + 5px); 
+    width: 6vw;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: 600;
+    min-width: 5vw;
+    border-radius: 10px;
+}
+.button-nav2{
+    font-size: clamp(1vw, 10px, 1vw + 5px); 
+    width: 8vw;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.button-nav:hover{
+    background-color: #0059A0;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+.button-nav2:hover{
+    background-color: #0059A0;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+
 .footer{
     display: flex;
     align-items: center;
-    height: 45vh;
-    border: 5px solid blue;
+    height: 320px;
     overflow-x: hidden;
     background-color:#032855;
     flex-direction: column;
+    padding-top: 15px;
+}
+.text-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
 }
 .section1{
     display: flex;
@@ -84,9 +165,26 @@
     justify-content: center;
     align-items: center;
 }
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    flex-direction: row;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
 .linha-rodape {
     width: 100%;
     border-bottom: 1px solid #dadada;
+}
+.linha-grid {
+    width: 100%;
+    border-bottom: 1px solid blue;
 }
 .content{
     display: flex;
@@ -94,7 +192,6 @@
     align-items: center;
     margin: 15px;
     width: 90vw;
-    border: 5px solid green;
     flex-direction: column;
 }
 .button_saibamais {
@@ -121,18 +218,20 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     color: #3b3a3a;
  }
 
  .structure2{
      display: flex;
      justify-content: center;
      align-items: center;
- }
+     color: #3b3a3a;
+    }
 
  .structure3{
      width: 100%;
      padding-top: 50px;
-     border: 5px solid red;
+     color: #3b3a3a;
 
  }
 
@@ -143,7 +242,6 @@
      flex-direction: column;
      width: 50%;
      margin: auto;
-     border: 5px solid brown;
  }
 
 li::marker{
@@ -163,7 +261,6 @@ li{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 1px solid red;
 }
 .image-structure{
     display: flex;
@@ -177,8 +274,21 @@ li{
     align-items: center;
     width: 100vw;
     background-color: #AED3EC;
-    border: 5px solid springgreen;
     flex-direction: column;
+    margin-bottom: 10vw;
+}
+.grid1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.grid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 5vw;
 }
 /*Imagens*/
 .large-banner{
@@ -190,7 +300,6 @@ li{
     position: relative;
     text-align: center;
     color: white;
-    border: 5px solid red;
     object-fit: contain;
     min-width: 100%;
 }
@@ -231,7 +340,6 @@ li{
 }
 .background{
     width: 100%;
-    border: 5px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,9 +348,13 @@ li{
 .image-structure{
     width: 50vw;
     margin: auto;
+    min-width: 300px;
 }
 .backgroundIMG{
     padding-left: 94vw;
+}
+.imgEixo{
+    width: 15vw;
 }
 /* Texto */
 .banner-text{
@@ -262,4 +374,22 @@ li{
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.text-link{
+    color: white;
+    padding: 10px;
+    font-size: clamp(1vw, 10px, 1vw + 5px);
+}
+.text-grid2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60vw;
+    padding-right: 1vw;
+    padding-left: 5vw;
+    font-size: 4vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    color: #053168; 
+    font-weight: bold;
 }
